@@ -24,8 +24,8 @@ body {
     flex-direction: column;
     border: 2px solid var(--black);
     /* add back to make look like a mobile screen */
-    /* height: 560px;
-    overflow: scroll; */
+    height: 80vh;
+    overflow: scroll;
     border-radius: 8px;
 }
 
@@ -41,13 +41,13 @@ header {
     border-radius: 8px 8px 0 0;
 }
 
-.post {
+#post {
     background-color: var(--white);
     width: 100%;
     margin-bottom: 20px;
 }
 
-.post:last-child {
+#post:last-child {
     border-radius: 0 0 8px 8px;
     margin-bottom: 0;
 }
@@ -64,10 +64,15 @@ header {
 .icon {
     height: 25px;
     padding: 0 6px;
+    transition: all .2s ease;
 }
 
 .icon:first-child {
     padding-left: 0;
+}
+
+.icon:hover {
+    opacity: 0.5;
 }
 
 .post-header {
