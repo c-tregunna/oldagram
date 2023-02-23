@@ -61,3 +61,19 @@ oldagramPosts();
 //             </div>
 //             `
 //   });
+
+
+// Adding like
+let heart = document.querySelector(".like");
+let likesTotal = posts.map((posts) => posts.likes);
+console.log(likesTotal);
+heart.addEventListener('dblclick', function() {
+    let imageSrc = heart.src; //get the src of the image
+    console.log(imageSrc);
+    if(imageSrc.value = "images/icon-heart.png") {
+        heart.setAttribute('src', 'images/icon-heart-fill.png'); //change to filled heart
+    } else if (imageSrc.value = "images/icon-heart-fill.png") { //if dbl click again change back to unfilled heart - not working!
+        heart.setAttribute('src', 'images/icon-heart.png');
+    }
+
+})
