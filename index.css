@@ -17,15 +17,13 @@ body {
     font-size: 13px;
 }
 
+/* Conatins main content on page */
 .container {
     width: 375px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--black);
-    /* add back to make look like a mobile screen */
-    height: 80vh;
-    overflow: scroll;
     border-radius: 8px;
 }
 
@@ -41,6 +39,7 @@ header {
     border-radius: 8px 8px 0 0;
 }
 
+/* Post styles */
 #post {
     background-color: var(--white);
     width: 100%;
@@ -52,6 +51,7 @@ header {
     margin-bottom: 0;
 }
 
+/* post images */
 .logo {
     height: 80%;
 }
@@ -75,7 +75,11 @@ header {
     opacity: 0.5;
 }
 
-.post-header {
+/* post sections */
+.post-header,
+.post-interaction,
+.post-likes,
+.post-comments  {
     display: flex;
     padding: 10px;
 }
@@ -96,16 +100,12 @@ header {
     width: 100%;
 }
 
-.post-interaction {
-    display: flex;
-    padding: 10px;
-}
-
 .post-likes,
 .post-comments {
-    padding: 0 10px 10px;
+    padding-top: 0;
 }
 
+/* Generic classes */
 .bold {
     font-weight: 900;
     padding-right: 4px;
