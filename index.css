@@ -61,18 +61,27 @@ header {
     height: 34px;
 }
 
-.icon {
+.icon,
+i {
     height: 25px;
+    font-size: 25px;
     padding: 0 6px;
-    transition: all .2s ease;
+    transition: opacity .4s ease;
 }
 
-.icon:first-child {
+i {
     padding-left: 0;
 }
 
-.icon:hover {
+.icon:hover,
+i:hover {
     opacity: 0.5;
+}
+
+.fa-solid,
+.fa-solid:hover {
+    color: red;
+    opacity: 1;
 }
 
 /* post sections */
